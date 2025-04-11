@@ -10,6 +10,25 @@ public class EjerciciosRecursivos {
         return n+sumaCon(n-1);
 
     }
+    public  int factorial(int n){
+        if (n==0) return 1;
+        return n*factorial(n-1);
+    }
+
+    public int potencial(int n, int p){
+        if(p<=1) return n*1;
+        return n*potencial(n, p-1);
+    }
+
+    public  int sumaTotal(int n) {
+        if(n<10) return n;
+        return (n%10)+ sumaTotal (n/10);
+    }
+
+
+    
+    
+
     
 
 
