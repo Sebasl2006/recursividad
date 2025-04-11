@@ -8,6 +8,7 @@ public class App {
         System.out.println(e.sumaTotal(46684));
         e.descente(5);
         System.out.println(e.inverso(123));
+        System.out.println();
     
         
         
