@@ -22,7 +22,25 @@ public class EjerciciosRecursivos {
 
     public  int sumaTotal(int n) {
         if(n<10) return n;
-        return (n%10)+ sumaTotal (n/10);
+        return (n%10)+ sumaTotal (n/10); 
+    }
+
+    public void descente(int n){
+        if (n<=0) System.out.println(" "+1);
+        else {
+            System.out.print(n+" ");
+            descente(n-1);
+            
+        }
+        
+    }
+
+    public int inverso(int n){
+        if (n<=1) return n;
+        return Integer.parseInt("" + (n%10) + inverso(n/10));
+
+       
+        
     }
 
 
